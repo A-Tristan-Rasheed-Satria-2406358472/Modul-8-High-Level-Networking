@@ -11,3 +11,11 @@ tokio-stream = "0.1"
 
 [build-dependencies]
 tonic-build = "0.7"
+
+[[bin]]
+name = "grpc-server"
+path = "src/grpc_server.rs"
+
+[[bin]]
+name = "grpc-client"
+path = "src/grpc_client.rs"
