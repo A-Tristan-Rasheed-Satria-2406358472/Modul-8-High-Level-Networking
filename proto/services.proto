@@ -14,7 +14,7 @@ service TransactionService {
 
 // Service for chatting with a customer service bot
 service ChatService {
-  rpc Chat(ChatMessage) returns (stream ChatMessage);
+  rpc Chat(stream ChatMessage) returns (stream ChatMessage);
 }
 
 message PaymentRequest {
